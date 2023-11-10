@@ -1,0 +1,6 @@
+services:
+
+    motherbrain.sylius_payum_stripe_sepa.form.type.gateway_configuration.stripe_js_sepa:
+        class: Motherbrain\SyliusPayumStripeSepaPlugin\Form\Type\StripeJsSepaGatewayConfigurationType
+        tags:
+          { name: sylius.gateway_configuration_type, type: stripe_checkout_session }
