@@ -20,7 +20,7 @@ final class MotherbrainSyliusPayumStripeSepaExtension extends AbstractResourceEx
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
 
-        $loader->load('services.xml');
+        $loader->load('services.yaml');
     }
 
     public function prepend(ContainerBuilder $container): void
@@ -35,7 +35,7 @@ final class MotherbrainSyliusPayumStripeSepaExtension extends AbstractResourceEx
 
     protected function getMigrationsDirectory(): string
     {
-        return '@AcmeSyliusExamplePlugin/migrations';
+        return '@MotherbrainSyliusPayumStripeSepaPlugin/migrations';
     }
 
     protected function getNamespacesOfMigrationsExecutedBefore(): array
