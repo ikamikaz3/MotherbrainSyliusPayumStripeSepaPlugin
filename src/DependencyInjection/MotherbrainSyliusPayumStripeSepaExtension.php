@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Motherbrain\SyliusPayumStripeSepaPlugin;
+namespace Motherbrain\SyliusPayumStripeSepaPlugin\DependencyInjection;
 
 use Sylius\Bundle\CoreBundle\DependencyInjection\PrependDoctrineMigrationsTrait;
 use Sylius\Bundle\ResourceBundle\DependencyInjection\Extension\AbstractResourceExtension;
