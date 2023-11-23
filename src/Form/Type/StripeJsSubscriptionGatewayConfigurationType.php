@@ -15,16 +15,19 @@ final class StripeJsSubscriptionGatewayConfigurationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('publishable_key', TextType::class)
-            ->add('publishable_key', TextType::class)
+            ->add('publishable_key', TextType::class, [
+                'label' => 'motherbrain_sylius_payum_stripe_subscription_plugin.form.gateway_configuration.stripe_js_subscription.publishable_key'
+            ])
+            ->add('secret_key', TextType::class, [
+                'label' => 'motherbrain_sylius_payum_stripe_subscription_plugin.form.gateway_configuration.stripe_js_subscription.secret_key'
+            ])
             ->add('webhook_secret_keys', CollectionType::class, [
                 'allow_add' => true,
                 'allow_delete' => true,
                 'delete_empty' => true,
-                'label' => 'webhook_secret_keys',
+                'label' => 'motherbrain_sylius_payum_stripe_subscription_plugin.form.gateway_configuration.stripe_js_subscription.webhook_secret_keys',
                 'constraints' => [
                     new NotBlank([
-                        'message' => '',
                         'groups' => 'sylius',
                     ]),
                 ],
