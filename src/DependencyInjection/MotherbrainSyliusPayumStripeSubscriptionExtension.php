@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-final class MotherbrainSyliusPayumStripeSepaExtension extends AbstractResourceExtension implements PrependExtensionInterface
+final class MotherbrainSyliusPayumStripeSubscriptionExtension extends AbstractResourceExtension implements PrependExtensionInterface
 {
     use PrependDoctrineMigrationsTrait;
 

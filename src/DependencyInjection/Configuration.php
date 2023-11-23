@@ -14,7 +14,7 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('motherbrain_sylius_payum_stripe_sepa_plugin');
+        $treeBuilder = new TreeBuilder('motherbrain_sylius_payum_stripe_subscription_plugin');
         $rootNode = $treeBuilder->getRootNode();
 
         return $treeBuilder;
