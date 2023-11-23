@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Motherbrain\SyliusPayumStripeSepaPlugin;
+namespace Motherbrain\SyliusPayumStripeSubscriptionPlugin;
 
 use Sylius\Bundle\CoreBundle\Application\SyliusPluginTrait;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-final class MotherbrainSyliusPayumStripeSepaPlugin extends Bundle
+final class MotherbrainSyliusPayumStripeSubscriptionPlugin extends Bundle
 {
     use SyliusPluginTrait;
 

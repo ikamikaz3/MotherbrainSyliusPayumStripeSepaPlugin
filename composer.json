@@ -1,6 +1,6 @@
 {
-    "name": "motherbrain/sylius-payum-stripe-sepa-plugin",
-    "description": "Plugin allowing to process subscriptions through SEPA debit.",
+    "name": "motherbrain/sylius-payum-stripe-subscription-plugin",
+    "description": "Plugin allowing to process subscriptions through Payum with a Stripe Gateway.",
     "type": "sylius-plugin",
     "keywords": [
         "sylius",
@@ -59,8 +59,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Motherbrain\\SyliusPayumStripeSepaPlugin\\": "src/",
-            "Tests\\Motherbrain\\SyliusPayumStripeSepaPlugin\\": "tests/"
+            "Motherbrain\\SyliusPayumStripeSubscriptionPlugin\\": "src/",
+            "Tests\\Motherbrain\\SyliusPayumStripeSubscriptionPlugin\\": "tests/"
         }
     },
     "autoload-dev": {

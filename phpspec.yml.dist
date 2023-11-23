@@ -1,4 +1,4 @@
 suites:
     main:
-        namespace: Motherbrain\SyliusPayumStripeSepaPlugin
-        psr4_prefix: Motherbrain\SyliusPayumStripeSepaPlugin
+        namespace: Motherbrain\SyliusPayumStripeSubscriptionPlugin
+        psr4_prefix: Motherbrain\SyliusPayumStripeSubscriptionPlugin

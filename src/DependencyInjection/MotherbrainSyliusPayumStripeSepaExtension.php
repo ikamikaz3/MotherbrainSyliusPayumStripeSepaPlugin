@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Motherbrain\SyliusPayumStripeSepaPlugin\DependencyInjection;
+namespace Motherbrain\SyliusPayumStripeSubscriptionPlugin\DependencyInjection;
 
 use Sylius\Bundle\CoreBundle\DependencyInjection\PrependDoctrineMigrationsTrait;
 use Sylius\Bundle\ResourceBundle\DependencyInjection\Extension\AbstractResourceExtension;
@@ -35,7 +35,7 @@ final class MotherbrainSyliusPayumStripeSepaExtension extends AbstractResourceEx
 
     protected function getMigrationsDirectory(): string
     {
-        return '@MotherbrainSyliusPayumStripeSepaPlugin/migrations';
+        return '@MotherbrainSyliusPayumStripeSubscriptionPlugin/migrations';
     }
 
     protected function getNamespacesOfMigrationsExecutedBefore(): array
